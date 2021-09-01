@@ -46,10 +46,11 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 15px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-house.jpg');
-
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-kdrama.jpg');
+    
     height: 400px;
     background-size:cover;
+    margin-bottom: 35px;
 
     display: flex;
     flex-direction: column;
@@ -102,12 +103,23 @@ header nav a:hover{
     width: 70%;
 }
 
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.legenda{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 3px;
+}
+
 .box-filme{
     height: 100%;
     width: 100%;
     display: block;
+    transition: transform .5s ease;
 }
 
-.carrosel-filmes{
-    margin-top: 5px;
+.box-filme:hover{
+    transform: scale(1.1);
 }
